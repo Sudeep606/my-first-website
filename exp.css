@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    background-color: rgb(233, 12, 12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-left: 0px;
+}
+.list-item{
+    display: inline;
+    list-style: none;
+    margin: 0px 60px;
+
+}
+.links{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: 90%;
+    height: 400px;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 60px;
+    grid-gap: 20px;
+    /* background-color: aqua; */
+    /* border: solid 1px; */
+    padding: 20px;
+    height: 500px;
+    margin-top: 50px;
+
+}
+.grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(228, 188, 128);
+    /* border: solid 1px; */
+    height: 500px;
+
+}
+#text{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: darkgoldenrod;
+    margin: 10px;
+    font-family: cursive;
+}
+p{
+    color: rgb(216, 148, 22);
+    margin: 60px;
+}
+button{
+    height: 50px;
+    width: 100px;
+    background-color: chocolate;
+    color: brown;
+    border: solid 2px;
+    border-radius: 10px;
+    margin-left: 400px;
+  
+}
+#text2>img{
+margin-right: 60px;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+.grid-container1{
+    height: 600px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* background-color: blue; */
+    padding: 10px;
+    display: inline grid;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    grid-gap: 10px;
+
+}
+.grid-item1{
+    /* border: solid 1px; */
+    height: 300px;
+    width: 300px;
+
+}
+.grid-item1>img{
+    width: 300px;
+    height: 350px;
+}
+img>a{
+    width: 300px;
+    height: 350px;
+    margin-left: 5px;
+    margin-top: 2px;
+
+}
+.icon-collections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    border-radius: 50%;
+
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,white,yellow,orange);
+}
+.brand{
+    font-size: 30px;
+    color: black;
+}
+.icon:hover .brand{
+    color: aliceblue;
+    animation: move 1s;
+}
+@keyframes move {
+    0%{
+        transform: rotate(15deg);
+    }
+    25%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    75%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(15deg);
+    }
+
+}
+footer>p{
+    text-align: center;
+    font-weight: 600;
+}
+@media screen and (max-width: 800px) {
+    .container, .grid-container, .grid-container1, .grid-item, .grid-item1, .icon, .icon-collections, .icon:hover, .links, .list-item, .logo {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
